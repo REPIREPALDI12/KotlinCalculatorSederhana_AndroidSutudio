@@ -9,6 +9,7 @@
     android:background="@color/almostBlack"
     tools:ignore="HardcodedText"
     tools:context=".MainActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -19,11 +20,11 @@
             android:id="@+id/workingsTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
             android:lines="2"
             android:maxLines="2"
-            android:textColor="@color/white"
+            android:text=""
             android:textAlignment="textEnd"
+            android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintBottom_toTopOf="@id/resultsTV"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -34,11 +35,11 @@
             android:id="@+id/resultsTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
             android:lines="1"
             android:maxLines="1"
-            android:textColor="@color/white"
+            android:text=""
             android:textAlignment="textEnd"
+            android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -52,13 +53,13 @@
 
         <Button
             style="@style/buttonNumber"
-            android:textColor="@color/red"
+            android:textColor="@color/orange"
             android:onClick="allClearAction"
             android:text="AC"/>
         <Button
             style="@style/buttonNumber"
             android:layout_weight="2"
-            android:textColor="@color/red"
+            android:textColor="@color/orange"
             android:onClick="backSpaceAction"
             android:text="⌫"/>
 <!--        <Button-->
@@ -103,6 +104,7 @@
             android:text="6" />
         <Button
             style="@style/buttonOperator"
+            android:textSize="30sp"
             android:text="-"/>
 
     </LinearLayout>
@@ -133,14 +135,17 @@
             android:text="."/>
         <Button
             style="@style/buttonNumber"
+
             android:text="0"/>
+
         <Button
             style="@style/buttonNumber"
-            android:layout_weight="2"
+            android:layout_weight="1.5"
             android:background="@color/orange"
-            android:textSize="40sp"
             android:onClick="equalsAction"
-            android:text="=" />
+            android:text="="
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
